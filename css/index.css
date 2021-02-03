@@ -1,0 +1,11 @@
+.navbar-brand{
+    margin: 1em;
+    margin-left: 1.5em;
+    color: darkgrey;
+    font-size: 1.5em;
+}
+
+.headShot {
+    height: 300px;
+    width: 250px;
+}
