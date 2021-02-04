@@ -5,9 +5,19 @@
     font-size: 1.5em;
 }
 
-.parallax{
-    height: 300px;
-    background: gray;
-    /* background-image: url("../images/business card photo.jpeg"); */
-    position: relative;
+.parallex{
+    height: 100%;
+    width: 100%;
+    /* background: gray; */
+    background-image: url("../images/tree.jpg");
+    background-position: center;
+    position: fixed;
+    z-index: -1;
+}
+
+#projects {
+    /* background and height added to try out parallex effect */
+    background: black;
+    margin-top: 300px;  /*margin needed to see parallex*/
+    height: 2000px;
 }
