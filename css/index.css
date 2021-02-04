@@ -1,11 +1,13 @@
 .navbar-brand{
-    margin: 1em;
-    margin-left: 1.5em;
+    /* margin: 1em; */
+    /* margin-left: 1.5em; */
     color: darkgrey;
     font-size: 1.5em;
 }
 
-.headShot {
+.parallax{
     height: 300px;
-    width: 250px;
+    background: gray;
+    /* background-image: url("../images/business card photo.jpeg"); */
+    position: relative;
 }
