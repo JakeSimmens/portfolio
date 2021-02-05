@@ -16,19 +16,27 @@
 
     <section>
         <nav class="navbar" role="navigation">
-            <div class="navbar-brand"><span>Jake Simmens</span></div>
-
+          <div class="navbar-brand">
+            <a class="navbar-item">Jake Simmens</a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div class="navbar-menu">
             <div class="navbar-end">
-                <div class="navbar-item">
-                    About
-                </div>
-                <div class="navbar-item">
-                    Projects
-                </div>
-                <div class="navbar-item">
-                    Contact
-                </div>
-            </div>
+              <div class="navbar-item">
+                  About
+              </div>
+              <div class="navbar-item">
+                  Projects
+              </div>
+              <div class="navbar-item">
+                  Contact
+              </div>
+          </div>
+          </div>
         </nav>
     </section>
 
@@ -65,7 +73,7 @@
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="projects" class="section darkBackground">
       <div class="tile is-parent">
         <div class="tile is-child box">Project 1</div>
         <div class="tile is-child box">Project 2</div>
@@ -76,6 +84,94 @@
         <div class="tile is-child box">Project 5</div>
         <div class="tile is-child box">Project 6</div>
       </div>
+    </section>
+
+    <section class="section">
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <ul>
+              <li>Backend</li>
+              <li>JavaScript</li>
+              <li>Node.js with Express.js</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <ul>
+              <li>React</li>
+              <li>Bootstrap</li>
+              <li>Bulma</li>
+              <li>HTML/CSS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <ul>
+              <li>Other Experience</li>
+              <li>Bachelor's in Computer Science</li>
+              <li>C++</li>
+              <li>Java</li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section darkBackground">
+        <div class="columns">
+          <div class="column is-4">
+            <div class="box">
+              <p>Let's get together!</p>
+              <div class="content">
+                <ul>
+                  <li>jakesimmens.com</li>
+                  <li>LinkedIn</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="column is-8">
+            <div class="box">
+              <form action="">
+
+                <div class="field">
+                  <label for="" class="label">Name</label>
+                  <div class="control">
+                    <input type="text" class="input">
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="" class="label">Email</label>
+                  <div class="control">
+                    <input type="text" class="input">
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="" class="label">Message</label>
+                  <div class="control"></div>
+                    <textarea name="" id="" cols="30" rows="10" class="textarea" placeholder="How may I help you?"></textarea>
+                  </div>
+                </div>
+                <div class="field is-grouped">
+                  <div class="control">
+                    <button class="button">Submit</button>
+                  </div>
+                  <div class="control">
+                    <button class="button">Cancel</button>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
     </section>
     <footer class="footer has-text-centered">
       <div class="container">

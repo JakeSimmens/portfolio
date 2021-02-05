@@ -1,6 +1,8 @@
+.navbar {
+    /* position:fixed;
+    width: 100%; */
+}
 .navbar-brand{
-    /* margin: 1em; */
-    /* margin-left: 1.5em; */
     color: darkgrey;
     font-size: 1.5em;
 }
@@ -9,7 +11,7 @@
     height: 100%;
     width: 100%;
     /* background: gray; */
-    background-image: url("../images/tree.jpg");
+    background-image: url("../images/light\ wood.png");
     background-position: center;
     position: fixed;
     z-index: -1;
@@ -17,7 +19,10 @@
 
 #projects {
     /* background and height added to try out parallex effect */
-    background: black;
+    /* background: black; */
     margin-top: 300px;  /*margin needed to see parallex*/
-    height: 2000px;
+}
+
+.darkBackground {
+    background: rgb(1, 1, 47);
 }
