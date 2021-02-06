@@ -24,10 +24,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <img class="avatar rounded-2 avatar-user" src="https://avatars.githubusercontent.com/u/56897348?s=400&amp;u=c40b8dce121fd3a0516ab4931c92c890ced20dcd&amp;v=4" alt="@aerojake" width="200" height="200">
-<!--   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a> -->
+  <img src="https://avatars.githubusercontent.com/u/56897348?s=400&amp;u=c40b8dce121fd3a0516ab4931c92c890ced20dcd&amp;v=4" alt="@aerojake" width="200" height="200">
 
   <h3 align="center">Jake Simmens</h3>
 
