@@ -24,7 +24,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <img src="https://avatars.githubusercontent.com/u/56897348?s=400&amp;u=c40b8dce121fd3a0516ab4931c92c890ced20dcd&amp;v=4" alt="@aerojake" width="200" height="200">
+  <img src="images/business card photo.jpeg" alt="@aerojake" width="240" height="300">
 
   <h3 align="center">Jake Simmens</h3>
 
