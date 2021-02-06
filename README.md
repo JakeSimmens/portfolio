@@ -74,7 +74,7 @@ This site is the homebase for my personal brand.  My journey with software engin
 
 Jake Simmens - [LinkedIn](https://linkedin.com/in/jakesimmens) - jake@jakesimmens.com
 
-Project Link: [https://jakesimmens.com](http://jakesimmens.com)
+Project Link: [http://jakesimmens.com](http://jakesimmens.com)
 
 
 
