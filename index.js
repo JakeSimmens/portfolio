@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req,res) => {
-    res.send("Future Portfolio site");
+    res.render("index");
 });
 
 const port = process.env.PORT || 3000;
