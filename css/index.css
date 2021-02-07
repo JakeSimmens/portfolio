@@ -8,11 +8,11 @@
 }
 
 .parallex{
+    /* Background pattern crossword.png from Toptal Subtle Patterns */
     height: 100%;
     width: 100%;
-    background: e0e1ddff;
-    /* background-image: url("../images/light\ wood.png"); */
-    background-position: center;
+    background-image: url("../images/crossword.png");
+    background-repeat: repeat;
     position: fixed;
     z-index: -1;
 }
