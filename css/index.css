@@ -24,5 +24,6 @@
 }
 
 .darkBackground {
-    background: rgb(1, 1, 47);
+    /* background: rgb(1, 1, 47); */
+    background: #1b263bff;
 }
