@@ -12,16 +12,13 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-    console.log("contact post request received");
-
     let emailData = {
-        from: req.body.email,
-        to: "jake@jakesimmens.com",
+        contactName: req.body.contactName,
+        contactEmail: req.body.email,
         subject: "PORTFOLIO - Contact Request",
         text: req.body.message
     }
-    console.log(emailData);
-
+    console.log("email send request: ", emailData);
 
     res.redirect('/');
 })
