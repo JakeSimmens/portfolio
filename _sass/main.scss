@@ -41,6 +41,9 @@ $platinum: #e0e1ddff;
 // Update the sans-serif font family
 $family-sans-serif: "Helvetica", "Arial", sans-serif;
 
+
+///// MY OPTIONS ///////////////
+
 // 3. Set the derived variables
 // Use the new pink as the primary color
 $primary: $yale-blue;
@@ -51,6 +54,7 @@ $info: $cerulean-frost;
 // $danger:;
 // $dark:;
 $text: $dark-gray-text;
+$column-gap: .35rem;
 
 // 4. Import the rest of Bulma
 
