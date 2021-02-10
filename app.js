@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/blog', (req, res) => {
-    res.send("blog page");
+    res.render('blog');
 });
 
 app.post('/', (req, res) => {
