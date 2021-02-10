@@ -24,7 +24,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <img src="images/business card photo.jpeg" alt="@aerojake" width="240" height="300">
+  <img src="public/images/business card photo.jpeg" alt="Jake Simmeens headshot" width="240" height="300">
 
   <h3 align="center">Jake Simmens</h3>
 
