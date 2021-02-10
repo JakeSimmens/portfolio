@@ -27,16 +27,16 @@
           <div class="navbar-menu">
             <div class="navbar-end">
               <div class="navbar-item">
-                  About
+                  <a class="button" href="">About</a>
               </div>
               <div class="navbar-item">
-                  Projects
+                <a class="button" href="#project_section">Projects</a>
               </div>
               <div class="navbar-item">
-                  Blog
+                <a class="button" href="/blog">Blog</a>
               </div>
               <div class="navbar-item">
-                  Contact
+                <a class="button" href="#contact_section">Contact</a>
               </div>
           </div>
           </div>
@@ -47,7 +47,7 @@
       <div class="hero is-primary is-medium">
         <div class="hero-body">
           <div class="columns is-vcentered">
-            <div class="column is-centered">
+            <div class="column is-centered is-one-third">
               <div class="level">
                 <div class="level-item has-text-centered">
                   <p class="title is-1">Jake</p>
@@ -59,12 +59,16 @@
                 </div>
               </div>
             </div>
-            <div class="column is-one-quarter">
-              <figure class="image">
-                <img src="./images/business card photo.jpeg" alt="Smiling photo of Jake Simmens in a suit and purple tie" class="is-rounded">
-              </figure>
+            <div class="column is-centered is-one-third">
+              <div class="level">
+                <div class="level-item has-text-centered">
+                  <figure class="image">
+                    <img src="./images/business card photo.jpeg" alt="Smiling photo of Jake Simmens in a suit and purple tie" class="is-rounded hero-head">
+                  </figure>
+                </div>
+              </div>
             </div>
-            <div class="column">
+            <div class="column is-centered is-one-third">
               <div class="level">
                 <div class="level-item has-text-centered">
                   <p class="subtitle is-3">Software</p>
@@ -81,12 +85,12 @@
       </div>
     </section>
 
-
     <section id="projects" class="section">
       <div class="columns">
-        <div class="column">
+        <div class="column is-flex">
+          <a id="project_section"></a>
           <article class="box">
-            <p class="title">jReads Book App</p>
+            <h3 class="title">jReads Book App</h3>
             <figure class="image is-4by3">
               <img src="images/bookAppHome.png" alt="Screenshot of jReads Book App home screen displaying book shelf with two rows of book covers.">
             </figure>
@@ -95,9 +99,9 @@
             <p><a href="https://github.com/aerojake/book-shelf">Github</a></p>
           </article>
         </div>
-        <div class="column">
+        <div class="column is-flex">
           <article class="box">
-            <p class="title">Risk Dice Game</p>
+            <h3 class="title">Risk Dice Game</h3>
             <figure class="image is-4by3">
               <img src="images/diceGame.png" alt="Screenshot of Risk Dice game showing total remaining attacking and defending armies along with the results of 3 attacking armies versus 2 defending armies dice roll">
             </figure>
@@ -106,9 +110,9 @@
             <p><a href="https://github.com/aerojake/dice-game">Github</a></p>
           </article>
         </div>
-        <div class="column">
+        <div class="column is-flex">
           <article class="box">
-            <p class="title">React Calculator</p>
+            <h3 class="title">React Calculator</h3>
             <figure class="image is-4by3">
               <img src="images/reactCalcScreenShot.png" alt="Screenshot of a basic calculator with /, x, -, +, and exponents">
             </figure>
@@ -130,51 +134,6 @@
         </div>
       </div>
     </section>
-
-    <!-- <section id="projects" class="section">
-      <div class="tile is-ancestor is-vertical">
-        <div class="tile is-parent">
-
-          <article class="tile is-child box">
-            <p class="title">jReads Book App</p>
-            <figure class="image is-4by3">
-              <img src="images/bookAppHome.png" alt="Screenshot of jReads Book App home screen displaying book shelf with two rows of book covers.">
-            </figure>
-            <p class="content">For my love of reading, this JavaScript app using Node and Express to store books of interest for each user and comment on books.</p>
-            <a href="">Visit Site</a>
-            <p><a href="https://github.com/aerojake/book-shelf">Github</a></p>
-          </article>
-
-          <article class="tile is-child box">
-            <p class="title">Risk Dice Game</p>
-            <figure class="image is-4by3">
-              <img src="images/diceGame.png" alt="Screenshot of Risk Dice game showing total remaining attacking and defending armies along with the results of 3 attacking armies versus 2 defending armies dice roll">
-            </figure>
-            <p class="content">Inspired by the board game Risk, this javascript app allows the users to play out the dice battles from the game.</p>
-            <a href="">Visit Site</a>
-            <p><a href="https://github.com/aerojake/dice-game">Github</a></p>
-          </article>
-
-          <article class="tile is-child box">
-            <p class="title">React Calculator</p>
-            <figure class="image is-4by3">
-              <img src="images/reactCalcScreenShot.png" alt="Screenshot of a basic calculator with /, x, -, +, and exponents">
-            </figure>
-            <p class="content">Calculator project working with React.</p>
-            <a href="">Visit Site</a>
-            <p><a href="https://github.com/aerojake/react-calculator">Github</a></p>
-          </article>
-        </div>
-        <div class="tile is-ancestor is-vertical">
-          <div class="tile is-parent">
-            <article class="tile is-child box">Project 4</article>
-            <article class="tile is-child box">Project 5</article>
-            <article class="tile is-child box">Project 6</article>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
 
     <section class="section">
       <div class="columns">
@@ -214,6 +173,7 @@
 
     <section class="section darkBackground">
         <div class="columns">
+          <a id="contact_section"></a>
           <div class="column is-4">
             <div class="box">
               <p>Let's get together!</p>
@@ -269,13 +229,13 @@
           <div class="column is-8-desktop is-offset-2-desktop">
             <p style="margin-top: 1rem;">
               <a href="http://bulma.io">
-                <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+                <img src="images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
               </a>
             </p>
           </div>
         </div>
       </div>
     </footer>
-    <script type="text/javascript" src="lib/main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

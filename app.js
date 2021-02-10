@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
     res.render("index");
 });
 
+app.get('/blog', (req, res) => {
+    res.send("blog page");
+});
+
 app.post('/', (req, res) => {
     let emailData = {
         contactName: req.body.contactName,
