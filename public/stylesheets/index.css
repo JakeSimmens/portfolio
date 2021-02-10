@@ -20,7 +20,7 @@
 #projects {
     /* background and height added to try out parallex effect */
     /* background: black; */
-    margin-top: 150px;  /*margin needed to see parallex*/
+    margin-top: 50px;  /*margin needed to see parallex*/
 }
 
 .darkBackground {
@@ -31,5 +31,9 @@
 .box {
     background-color: rgba(70, 77, 85, 0.90);
     color: white;
+}
+
+.hero-head {
+    max-width: 250px;
 }
 
