@@ -26,7 +26,7 @@
 <p align="center">
   <img src="public/images/business card photo.jpeg" alt="Jake Simmeens headshot" width="240" height="300">
 
-  <h3 align="center">Jake Simmens</h3>
+  <h1 align="center">Jake Simmens</h1>
 
   <p align="center">
     <a href="http://jakesimmens.com"><strong>Visit Portfolio Site</strong></a>
