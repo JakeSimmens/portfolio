@@ -1,10 +1,16 @@
 .navbar {
-    /* position:fixed;
-    width: 100%; */
+
 }
-.navbar-brand{
-    color: darkgrey;
-    font-size: 1.5em;
+
+.navLogoBox {
+    padding: 0;
+    margin: 0;
+    height: 50px;
+}
+
+.navLogo {
+    padding-left: 15px;
+    height: 50px;
 }
 
 .parallex{
@@ -19,7 +25,6 @@
 
 #projects {
     /* background and height added to try out parallex effect */
-    /* background: black; */
     margin-top: 50px;  /*margin needed to see parallex*/
 }
 
@@ -31,6 +36,10 @@
 .box {
     background-color: rgba(70, 77, 85, 0.90);
     color: white;
+}
+
+.hero-body {
+    padding-top: 52px;
 }
 
 .hero-head {
