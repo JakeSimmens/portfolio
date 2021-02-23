@@ -40,6 +40,18 @@
 
 .hero-body {
     padding-top: 52px;
+    font-family: "Montserrat";
+}
+
+.hero-name {
+    font-size: 3em;
+    font-family: "Roboto";
+    margin: 0;
+    text-align: center;
+}
+
+.hero-name + a {
+    justify-content: center;
 }
 
 .hero-head {
