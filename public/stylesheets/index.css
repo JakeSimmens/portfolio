@@ -14,23 +14,13 @@
 }
 
 .parallex{
-    /* Background pattern crossword.png from Toptal Subtle Patterns */
+    /* Background pattern from Toptal Subtle Patterns */
     height: 100%;
     width: 100%;
-    background-image: url("../images/crossword.png");
+    background-image: url("../images/brushed_alu_dark.png");
     background-repeat: repeat;
     position: fixed;
     z-index: -1;
-}
-
-#projects {
-    /* background and height added to try out parallex effect */
-    margin-top: 0px;  /*margin needed to see parallex*/
-}
-
-.darkBackground {
-    /* background: rgb(1, 1, 47); */
-    /* background: #1b263bff; */
 }
 
 .box {
@@ -61,9 +51,37 @@
     max-width: 250px;
 }
 
-
-
 .media {
     border: none;
 }
 
+.projects .card {
+    /* background-color:  rgba(70, 77, 85, 0.90); */
+    font-family: "Roboto";
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.projects .card img{
+    border-radius: 5px 5px 0px 0px;
+}
+
+.projects .card h3 {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.projects article .content {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: justify;
+}
+
+.projects article .card-footer-item {
+    border: none;
+}
+.projects article .card-footer {
+    border: none;
+}
