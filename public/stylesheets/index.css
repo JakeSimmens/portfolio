@@ -25,7 +25,7 @@
 
 #projects {
     /* background and height added to try out parallex effect */
-    margin-top: 50px;  /*margin needed to see parallex*/
+    margin-top: 0px;  /*margin needed to see parallex*/
 }
 
 .darkBackground {
@@ -39,12 +39,29 @@
 }
 
 .hero-body {
-    padding-top: 52px;
+    padding-top: 100px;
+    font-family: "Montserrat";
+}
+
+.hero-name {
+    font-size: 3em;
+    font-family: "Roboto";
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    height: 55px;
+}
+
+.hero-subtitle {
+    padding-top: 30px;
+    text-align: center;
 }
 
 .hero-head {
     max-width: 250px;
 }
+
+
 
 .media {
     border: none;
