@@ -1,6 +1,3 @@
-.navbar {
-
-}
 
 .navLogoBox {
     padding: 0;
@@ -17,7 +14,7 @@
     /* Background pattern from Toptal Subtle Patterns */
     height: 100%;
     width: 100%;
-    background-image: url("../images/brushed_alu_dark.png");
+    background-image: url("../images/wood_1.png");
     background-repeat: repeat;
     position: fixed;
     z-index: -1;
@@ -43,12 +40,20 @@
 }
 
 .hero-subtitle {
-    padding-top: 30px;
+    padding-top: 40px;
     text-align: center;
 }
 
 .hero-head {
     max-width: 250px;
+}
+
+#about {
+    font-size: 1.25em;
+}
+
+#about p {
+    margin: 30px;
 }
 
 .media {
