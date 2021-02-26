@@ -51,6 +51,7 @@ section {
 
 #heroBtnParent {
     display: flex;
+    cursor: default;
 }
 
 #heroContactBtn {
@@ -66,6 +67,7 @@ section {
     border: solid 1px white;
     border-radius: 5px;
     height: 45px;
+    cursor: pointer;
 
 }
 
