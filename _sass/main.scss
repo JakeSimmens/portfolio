@@ -1,64 +1,29 @@
 @charset "utf-8";
 
-
 // Customization
-
-// You can easily customize Bulma with your own variables.
-// Just uncomment the following block to see the result.
-
 
 // 1. Import the initial variables
 @import "../node_modules/bulma/sass/utilities/initial-variables";
-// 2. Set your own initial variables
-// Update the blue shade, used for links
-$blue: #06bcef;
-// Add pink and its invert
-$pink: #ff8080;
-$pink-invert: #fff;
-
-//pallette 1
-$charcoal: #464d55ff;
-$chinese-red: #a33b20ff;
-$spanish-gray: #9f9f92ff;
-$blue-jeans: #57b8ffff;
-$pearly-purple: #c46baeff;
-$dark-gray-text: #292929;
-
-//pallette 2
-$alice-blue: #e7ecefff;
-$yale-blue: #274c77ff;
-$cerulean-frost: #6096baff;
-$baby-blue-eyes: #a3cef1ff;
-$battleship-grey: #8b8c89ff;
-
-//pallette 3
-$rich-black-fogra-29: #0d1b2aff;
-$oxford-blue: #1b263bff;
-$bdazzled-blue: #415a77ff;
-$shadow-blue: #778da9ff;
-$platinum: #e0e1ddff;
 
 // Update the sans-serif font family
 $family-sans-serif: "Roboto", "Arial", sans-serif;
 
+//currently used colors
+$yale-blue: #274c77ff;
+$baby-blue-eyes: #a3cef1ff;
+$cerulean-frost: #6096baff;
+$dark-gray-text: #292929;
 
 ///// MY OPTIONS ///////////////
 
 // 3. Set the derived variables
-// Use the new pink as the primary color
 $primary: $yale-blue;
-$link: $baby-blue-eyes;
+$link: $cerulean-frost;
 $info: $cerulean-frost;
-// $success: $blue-jeans;
-// $warning:;
-// $danger:;
-// $dark:;
 $text: $dark-gray-text;
 $column-gap: .35rem;
 
 // 4. Import the rest of Bulma
-
-
 @import "../node_modules/bulma/bulma";
 
 
