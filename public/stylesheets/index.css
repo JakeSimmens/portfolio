@@ -35,12 +35,20 @@ section {
     font-family: "Montserrat";
 }
 
+
+
 .hero-name, .content h1{
-    font-size: 3.25em;
-    font-family: "Roboto";
+    font-size: 2.4em;
+    font-family: "Roboto Slab";
     margin: 0;
     text-align: center;
     height: 55px;
+    word-spacing: .12em;
+    letter-spacing: .05em;
+}
+
+.hero-name span {
+    font-size: 1.2em;
 }
 
 .hero-subtitle {
