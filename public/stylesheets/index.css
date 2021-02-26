@@ -26,8 +26,10 @@ section {
 }
 
 .box {
-    background-color: rgba(70, 77, 85, 0.90);
+    background-color: rgba(68, 68, 68, 0.90);
 }
+
+
 
 .hero-body {
     padding-top: 100px;
@@ -128,6 +130,12 @@ section {
     font-weight: 700;
 }
 
-.content ul {
-    list-style: none;
+
+
+.contact-links {
+    text-align: center;
+}
+
+.contact-links > p:first-child {
+    margin-bottom: 1em;
 }
