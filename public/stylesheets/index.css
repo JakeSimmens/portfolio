@@ -35,8 +35,8 @@ section {
     font-family: "Montserrat";
 }
 
-.hero-name {
-    font-size: 3em;
+.hero-name, .content h1{
+    font-size: 3.25em;
     font-family: "Roboto";
     margin: 0;
     text-align: center;
