@@ -18,25 +18,16 @@
             </div> -->
             <div class="column is-4 is-6-tablet is-offset-1 is-offset-0-desktop">
               <div class="content is-flex-direction-column">
-                <h1 class="hero-name has-text-light">Jake Simmens</h1>
+                <h1 class="hero-name has-text-light is-uppercase "><span>J</span>ake <span>S</span>immens</h1>
                 <h4 class="hero-subtitle has-text-light">Building Node.js Express backends to host your website.</h4>
                 <a href="#contact_section" class="">
                   <span id="heroBtnParent">
                     <span id="heroContactBtn">Contact Me</span>
                   </span>
-
                 </a>
-
               </div>
-
-
-
-                <!-- <h1 class="hero-name">Jake Simmens</h1>
-                <p class="subtitle is-5 hero-subtitle">Building Node.js Express backends to host your website.</p>
-                <a href="#contact_section" class="button">Contact Me</a> -->
             </div>
             <div class="column is-centered is-2">
-
             </div>
           </div>
         </div>
@@ -59,8 +50,8 @@
 
     <a id="project_section"></a>
     <section class="section projects">
-      <div class="columns is-desktop is-variable is-4">
-        <div class="column is-flex">
+      <div class="columns is-tablet is-variable is-4 is-multiline is-centered">
+        <div class="column is-flex is-half-tablet is-one-third-desktop">
           <article class="card">
             <div class="card-image">
               <figure class="image is-4by3">
@@ -69,18 +60,17 @@
             </div>
             <div class="card-content">
               <h3 class="title has-text-centered">jReads Books</h3>
-              <p class="content">For my love of reading, this JavaScript app using Node and Express to store books of interest for each user and comment on books.</p>
+              <p class="content">Love reading? This JavaScript app uses Node/Express with RESTful architecture to store books of interest for each user and along with comments for each book.</p>
             </div>
             <div class="card-footer">
               <a class="card-footer-item" href="">Visit Site</a>
               <a class="card-footer-item" href="https://github.com/JakeSimmens/book-shelf" target="_blank" rel="noopener noreferrer">Github</a>
             </div>
-
           </article>
         </div>
 
-        <div class="column is-flex">
-          <article class="card mb-4">
+        <div class="column is-flex is-half-tablet is-one-third-desktop">
+          <article class="card">
             <div class="card-image">
               <figure class="image is-4by3">
                 <img src="images/diceGame.png" alt="Screenshot of Risk Dice game showing total remaining attacking and defending armies along with the results of 3 attacking armies versus 2 defending armies dice roll">
@@ -88,7 +78,7 @@
             </div>
             <div class="card-content">
               <h3 class="title has-text-centered">Risk Dice</h3>
-              <p class="content">Inspired by the board game Risk, this javascript app allows the users to play out the dice battles from the game.</p>
+              <p class="content">Inspired by the dice battles in the board game Risk, this JavaScript app allows the users to play out the dice battles from the game.</p>
             </div>
             <div class="card-footer">
               <a class="card-footer-item" href="">Visit Site</a>
@@ -97,21 +87,21 @@
           </article>
         </div>
 
-        <div class="column is-flex">
+        <div class="column is-flex is-half-tablet is-one-third-desktop">
           <article class="card">
             <div class="card-image">
               <figure class="image is-4by3">
                 <img src="images/AWAuto.jpg" alt="Home page for auto mechanic shop">
               </figure>
             </div>
-            <div class="card-content">
-              <h3 class="title has-text-centered">A&W Automotive</h3>
-              <p class="content">A website developed for a local auto repair shop using Bootstrap and Node/Express on the back-end.</p>
-            </div>
-            <div class="card-footer">
-              <a class="card-footer-item" href="">Visit Site</a>
-              <a class="card-footer-item" href="https://github.com/JakeSimmens/aw-auto" target="_blank" rel="noopener noreferrer">Github</a>
-            </div>
+              <div class="card-content">
+                <h3 class="title has-text-centered">A&W Automotive</h3>
+                <p class="content">A website developed for a local automobile repair shop using RESTful architecture, Bootstrap, and Node/Express on the back-end.</p>
+              </div>
+              <div class="card-footer">
+                <a class="card-footer-item" href="">Visit Site</a>
+                <a class="card-footer-item" href="https://github.com/JakeSimmens/aw-auto" target="_blank" rel="noopener noreferrer">Github</a>
+              </div>
           </article>
         </div>
       </div>
@@ -251,11 +241,15 @@
         <div class="columns">
           <div class="column is-4">
             <div class="box">
-              <p>Let's get together!</p>
+              <p class="has-text-light">Let's get together!</p>
               <div class="content">
-                <ul>
-                  <li>jakesimmens.com</li>
-                  <li>LinkedIn</li>
+                <ul class="has-text-light">
+                  <li>
+                    <a href="https://www.linkedin.com/in/jakesimmens/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/JakeSimmens" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -265,21 +259,21 @@
               <form action="/" method="POST">
 
                 <div class="field">
-                  <label for="contactName" class="label">Name</label>
+                  <label for="contactName" class="label has-text-light">Name</label>
                   <div class="control">
                     <input name="contactName" type="text" class="input">
                   </div>
                 </div>
 
                 <div class="field">
-                  <label for="email" class="label">Email</label>
+                  <label for="email" class="label has-text-light">Email</label>
                   <div class="control">
                     <input name="email" type="text" class="input">
                   </div>
                 </div>
 
                 <div class="field">
-                  <label for="message" class="label">Message</label>
+                  <label for="message" class="label has-text-light">Message</label>
                   <div class="control"></div>
                     <textarea name="message" id="" cols="30" rows="10" class="textarea" placeholder="How may I help you?"></textarea>
                   </div>
