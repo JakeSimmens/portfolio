@@ -109,9 +109,12 @@ section {
 
 .projects article .card-footer-item {
     border: none;
+    align-self: flex-end;
 }
 .projects article .card-footer {
     border: none;
+
+    /* flex: 1 1 auto; */
 }
 
 .skillName {
