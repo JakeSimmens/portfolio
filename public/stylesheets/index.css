@@ -27,7 +27,6 @@ section {
 
 .box {
     background-color: rgba(70, 77, 85, 0.90);
-    color: white;
 }
 
 .hero-body {
@@ -35,7 +34,9 @@ section {
     font-family: "Montserrat";
 }
 
-
+.hero-head {
+    max-width: 300px;
+}
 
 .hero-name, .content h1{
     font-size: 2.4em;
@@ -54,7 +55,6 @@ section {
 .hero-subtitle {
     padding-top: 40px;
     text-align: center;
-
 }
 
 #heroBtnParent {
@@ -76,12 +76,9 @@ section {
     border-radius: 5px;
     height: 45px;
     cursor: pointer;
-
 }
 
-.hero-head {
-    max-width: 300px;
-}
+
 
 #about {
     font-size: 1.25em;
@@ -119,6 +116,7 @@ section {
     border: none;
     align-self: flex-end;
 }
+
 .projects article .card-footer {
     border: none;
 
@@ -128,4 +126,8 @@ section {
 .skillName {
     color: white;
     font-weight: 700;
+}
+
+.content ul {
+    list-style: none;
 }
