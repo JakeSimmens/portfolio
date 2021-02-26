@@ -1,3 +1,8 @@
+section {
+    max-width: 1215px;
+    margin: auto;
+}
+
 
 .navLogoBox {
     padding: 0;
@@ -35,13 +40,18 @@
     font-family: "Roboto";
     margin: 0;
     text-align: center;
-    justify-content: center;
     height: 55px;
 }
 
 .hero-subtitle {
     padding-top: 40px;
     text-align: center;
+
+}
+
+#heroContactBtn {
+    position: relative;
+    margin: auto;
 }
 
 .hero-head {
@@ -54,10 +64,6 @@
 
 #about p {
     margin: 30px;
-}
-
-.media {
-    border: none;
 }
 
 .projects .card {
@@ -89,4 +95,9 @@
 }
 .projects article .card-footer {
     border: none;
+}
+
+.skillName {
+    color: white;
+    font-weight: 700;
 }
