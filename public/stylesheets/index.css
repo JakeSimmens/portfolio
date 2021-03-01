@@ -114,23 +114,15 @@ section {
     text-align: justify;
 }
 
-.projects article .card-footer-item {
-    border: none;
-    align-self: flex-end;
-}
-
-.projects article .card-footer {
-    border: none;
-
-    /* flex: 1 1 auto; */
+.projects .card-content a {
+   text-align: center;
+   display: block;
 }
 
 .skillName {
     color: white;
     font-weight: 700;
 }
-
-
 
 .contact-links {
     text-align: center;
