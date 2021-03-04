@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+const {EMAIL_USERNAME, EMAIL_PASSWORD} = require("./secrets.js");
 const favicon = require("serve-favicon");
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -45,12 +46,12 @@ app.post('/', async (req, res) => {
     }
 
     let transporter = nodemailer.createTransport({
-        host: "smtp.jakesimmens.com",
+        host: "mail.jakesimmens.com",
         port: 465,  //will be 587 if secure is false
         secure: true,
         auth: {
-            user: "username",
-            pass: "password"
+            user: EMAIL_USERNAME,
+            pass: EMAIL_PASSWORD
         }
     });
 
