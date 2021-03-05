@@ -133,6 +133,20 @@ section {
    display: block;
 }
 
+@media (width > 768px){
+    .liftMe {
+        transition: margin-top .5s, margin-bottom .5s;
+    }
+
+    .liftMe:hover {
+        margin-top: -7px;
+        margin-bottom: 7px;
+    }
+
+}
+
+
+
 .skillName {
     color: #f5f5f5;
     font-weight: 700;
