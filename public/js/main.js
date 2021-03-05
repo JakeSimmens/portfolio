@@ -32,4 +32,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  let liftBoxes = document.querySelectorAll(".liftMe");
+  for(let box of liftBoxes){
+    box.addEventListener('mouseenter', () => {
+      console.log("liftMeUp triggered");
+      box.classList.toggle("liftMeUp");
+    });
+    box.addEventListener('mouseleave', () => {
+      // console.log("liftMeUp triggered");
+      box.classList.toggle("liftMeUp");
+    });
+  }
 });
