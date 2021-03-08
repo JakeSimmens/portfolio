@@ -50,15 +50,14 @@ app.post('/', async (req, res) => {
         port: 465,  //will be 587 if secure is false
         secure: true,
         auth: {
-            user: EMAIL_USERNAME,
-            pass: EMAIL_PASSWORD
+            user: process.env.EMAIL_USERNAME || EMAIL_USERNAME,
+            pass: process.env.EMAIL_PASSWORD || EMAIL_PASSWORD
         }
     });
 
     try{
         let info = await transporter.sendMail(emailData);
         console.log(`Message sent: ${info.messageId}`);
-        console.log("email data: ", emailData);
     } catch {
         console.log("email not working");
     }
@@ -69,5 +68,4 @@ app.post('/', async (req, res) => {
 const port = process.env.PORT || 3000;
 app.server = app.listen(port, function startServer() {
     console.log("portfolio server running");
-   
 });
