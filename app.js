@@ -1,16 +1,22 @@
-const {EMAIL_USERNAME, EMAIL_PASSWORD} = require("./secrets.js");
+const {EMAIL_USERNAME, EMAIL_PASSWORD, SESSION_SECRET} = require("./config.js");
 
 const express    = require("express");
 const app        = express();
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const favicon    = require("serve-favicon");
+const session    = require("express-session");
 const flash      = require("connect-flash");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(favicon(__dirname + "/public/images/favicon.ico"));
+app.use(session({
+  secret: SESSION_SECRET,
+  resave: false,
+  saveUninitialized: false
+}));
 app.use(flash());
 
 
