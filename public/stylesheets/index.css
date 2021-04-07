@@ -25,6 +25,10 @@ section {
     z-index: -1;
 }
 
+.notification {
+  margin-top: 52px;
+}
+
 .box {
     background-color: rgba(68, 68, 68, 0.90);
 }
@@ -68,7 +72,7 @@ section {
 }
 
 .hero-subtitle {
-    padding-top: 40px;
+    padding-top: 50px;
     text-align: center;
 }
 
@@ -80,8 +84,8 @@ section {
 #heroContactBtn {
     width: 100%;
     margin-top: 30px;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-left: 30%;
+    margin-right: 30%;
     background-color: #fAfAfA;
     color: black;
     font-weight: 700;

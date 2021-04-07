@@ -1,27 +1,37 @@
-const express = require("express");
-const app = express();
+const {EMAIL_USERNAME, EMAIL_PASSWORD, SESSION_SECRET} = require("./config.js");
+
+const express    = require("express");
+const app        = express();
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
-const {EMAIL_USERNAME, EMAIL_PASSWORD} = require("./secrets.js");
-const favicon = require("serve-favicon");
+const favicon    = require("serve-favicon");
+const session    = require("express-session");
+const flash      = require("connect-flash");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(favicon(__dirname + "/public/images/favicon.ico"));
+app.use(session({
+  secret: SESSION_SECRET,
+  resave: false,
+  saveUninitialized: false
+}));
+app.use(flash());
+
 
 app.get('/', (req, res) => {
-    res.render("index");
+    res.render("index", {messages: req.flash("info")});
 });
 
 app.get('/blog', (req, res) => {
-    res.render('blog');
+    res.render('blog', {messages: req.flash("info")});
 });
 
 app.post('/', async (req, res) => {
 
     let htmlMsg = 
-        `<h1> Portfolio Contact from jakesimmens.com</h1><br>
+        `<h3> Portfolio Contact from jakesimmens.com</h3><br>
         <p>Contact Name: ${req.body.contactName}</p>
         <p>Contact Email:  ${req.body.email}</p><br>
         <h2> message: </h2>
@@ -40,7 +50,7 @@ app.post('/', async (req, res) => {
             address: "contact@jakesimmens.com"
         },
         to: "jake@jakesimmens.com",
-        subject: `PORTFOLIO - Contact Request from ${req.body.contactName}`,
+        subject: `PORTFOLIO Site - ${req.body.contactName}`,
         html: htmlMsg,
         text: textMsg
     }
@@ -57,8 +67,10 @@ app.post('/', async (req, res) => {
 
     try{
         let info = await transporter.sendMail(emailData);
+        req.flash("info","Your message has been sent to Jake.");
         console.log(`Message sent: ${info.messageId}`);
     } catch {
+        req.flash("info",`I'm sorry, your message did not go thru.  Please email jake@jakesimmens.com.  Your message read: ${req.body.message}` );
         console.log("email not working");
     }
 
