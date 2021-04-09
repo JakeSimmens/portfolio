@@ -21,7 +21,10 @@ app.use(flash());
 
 
 app.get('/', (req, res) => {
-    res.render("index", {messages: req.flash("info")});
+    res.render("index", {
+      messages: req.flash("info"),
+      contactMessage: ""
+    });
 });
 
 app.get('/blog', (req, res) => {
@@ -29,6 +32,15 @@ app.get('/blog', (req, res) => {
 });
 
 app.post('/', async (req, res) => {
+
+    if(!req.body.contactName || !req.body.email || !req.body.message){
+      req.flash("info","Please fill out all 3 areas of the 'Contact Me' form.");
+      res.render("index", {
+        messages: req.flash("info"),
+        contactMessage: req.body.message
+      });
+      return;
+    }
 
     let htmlMsg = 
         `<h3> Portfolio Contact from jakesimmens.com</h3><br>
