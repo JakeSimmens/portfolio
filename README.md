@@ -34,8 +34,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 This site is the homebase for my personal brand.  My journey with software engineering started with my computer science degree and has now focused in on backend development with Javascript, Node.js, and Express.js.
 
 ### Built With
